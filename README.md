@@ -1,5 +1,5 @@
 # 💫 About Me:
-🔭 I’m currently working on MERN stack projects<br>🌱 I’m currently learning MySQL
+🔭 I’m currently working on MERN stack projects<br>🌱 I’m currently learning AWS
 
 
 ## 🌐 Socials:
