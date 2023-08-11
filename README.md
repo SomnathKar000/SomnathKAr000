@@ -1,5 +1,12 @@
 # 💫 About Me:
-🔭 I’m currently working on serverless applications.<br>👯 I’m looking to collaborate on backend projects.<br>🤝 I’m looking for help with Rust.<br>🌱 I’m currently learning about AWS services.
+👨‍💻 Crafting modern web solutions with React, Redux, and Express <br/>
+🔍 Exploring AWS services to create scalable and reliable applications <br/>
+🌐 Building full-stack apps with MongoDB and MySQL <br/>
+🛠️ Embracing TypeScript for robust and maintainable code <br/>
+⚡ Passion for serverless architecture and creating efficient APIs <br/>
+🌱 Diving into Rust to unlock new programming horizons <br/>
+📚 Lifelong learner and tech enthusiast <br/>
+🎯 Turning ideas into functional and impactful code <br/>
 
 
 ## 🌐 Socials:
