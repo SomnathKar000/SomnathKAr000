@@ -7,10 +7,10 @@
 🌱 Diving into Rust to unlock new programming horizons <br/>
 📚 Lifelong learner and tech enthusiast <br/>
 🎯 Turning ideas into functional and impactful code <br/>
-
 <a href="https://www.buymeacoffee.com/SomnathKar000"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=SomnathKar000&button_colour=5F7FFF&font_colour=ffffff&font_family=Lato&outline_colour=000000&coffee_colour=FFDD00" /></a>
 
 ## 🌐 Socials:
+[![Github Second Account](https://img.shields.io/badge/Github-%23010409.svg?logo=Github&logoColor=white)](https://github.com/somnath-wiseboxs)
 [![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?logo=Facebook&logoColor=white)](https://facebook.com/somnathkar000) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/somnath-kar-aa73aa1a3) [![Reddit](https://img.shields.io/badge/Reddit-%23FF4500.svg?logo=Reddit&logoColor=white)](https://reddit.com/user/Somnath000) [![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?logo=Twitter&logoColor=white)](https://twitter.com/SomnathKar000) 
 
 # 💻 Tech Stack:
