@@ -1,0 +1,37 @@
+name: Update README
+
+on:
+  push:
+    paths:
+      - "assets/profile.jpeg"
+      - "README.template.md"
+  schedule:
+    - cron: "0 0 * * *" # daily, keeps uptime/stats fresh
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install ascii-image-converter
+        run: |
+          wget https://github.com/TheZoraiz/ascii-image-converter/releases/latest/download/linux_amd64.tar.gz
+          tar -xzf linux_amd64.tar.gz
+          sudo mv ascii-image-converter /usr/local/bin/
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Generate README + ASCII art
+        run: node scripts/generate-readme.js
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md ascii-art.svg
+          git diff --staged --quiet || git commit -m "chore: update README (stats + ascii)"
+          git push
