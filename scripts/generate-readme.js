@@ -4,9 +4,9 @@ const util = require("util");
 const execPromise = util.promisify(exec);
 
 const USERNAME = "SomnathKar000";
-const DOB = new Date("2001-09-17");
+const DOB = new Date("2001-05-15"); // 👉 replace with your actual DOB
 const IMAGE_PATH = "assets/profile.jpeg";
-const ASCII_WIDTH = 60;
+const ASCII_WIDTH = 40;
 
 // ---- Uptime (age) ----
 function getUptime(dob) {
@@ -38,7 +38,7 @@ async function getGithubStats(username) {
   };
 }
 
-// ---- ASCII Art (SVG tspans, not full SVG — gets embedded inline) ----
+// ---- ASCII Art (SVG tspans) ----
 async function getAsciiTspans() {
   const { stdout } = await execPromise(
     `ascii-image-converter ${IMAGE_PATH} --width ${ASCII_WIDTH}`,
@@ -61,10 +61,10 @@ async function getAsciiTspans() {
   return { tspans, height: y + 20, lineCount: lines.length };
 }
 
-// ---- Build the SVG (ASCII art side) ----
+// ---- Build the SVG (viewBox so it scales to fit its column) ----
 function buildSvg(tspans, height) {
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="500" height="${height}" style="background:#0d1117">
-<text x="15" y="20" fill="#c9d1d9" font-family="monospace" font-size="12" class="ascii">
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 ${height}" style="background:#0d1117">
+<text x="15" y="20" fill="#c9d1d9" font-family="monospace" font-size="11" class="ascii">
 ${tspans}
 </text>
 </svg>`;
@@ -75,10 +75,8 @@ async function main() {
   const stats = await getGithubStats(USERNAME);
   const { tspans, height } = await getAsciiTspans();
 
-  // Write ASCII art as its own file (README embeds it as an image)
   fs.writeFileSync("ascii-art.svg", buildSvg(tspans, height));
 
-  // Fill README template with dynamic text stats
   const template = fs.readFileSync("README.template.md", "utf8");
   const output = template
     .replace(/{{UPTIME}}/g, uptime)

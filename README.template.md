@@ -1,4 +1,11 @@
-<img src="./ascii-art.svg" width="500" align="left" />
+<table>
+<tr>
+<td width="50%" valign="top">
+
+<img src="./ascii-art.svg" width="100%" />
+
+</td>
+<td width="50%" valign="top">
 
 ```
 somnath@dev  ---------------------------------
@@ -14,7 +21,7 @@ Frameworks: .............. Vue.js, AdonisJS, Node.js
 - Contact ---------------------------------
 Email.Personal: ......... somnathkar2023@gmail.com
 Email.Work: .............. somnathkar.dev@gmail.com
-LinkedIn: ................. somnathkar000
+LinkedIn: ................. somnathkar00
 GitHub: ................... SomnathKar000
 
 - GitHub Stats -----------------------------
@@ -24,3 +31,7 @@ Following: ......... {{FOLLOWING}}
 
 Last updated: {{DATE}}
 ```
+
+</td>
+</tr>
+</table>
