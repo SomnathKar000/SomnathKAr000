@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="56" style="background:#0d1117">
+<text x="15" y="20" fill="#c9d1d9" font-family="monospace" font-size="12" class="ascii">
+  <tspan x="15" y="20">Error: your terminal supports neither 24-bit nor 8-bit colors. Other coloring options aren't available</tspan>
+</text>
+</svg>
