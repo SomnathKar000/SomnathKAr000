@@ -1,9 +1,16 @@
-<img src="./ascii-art.svg" width="500" align="left" />
+<table>
+<tr>
+<td width="50%" valign="top">
+
+<img src="./ascii-art.svg" width="100%" />
+
+</td>
+<td width="50%" valign="top">
 
 ```
 somnath@dev  ---------------------------------
 OS: ................ macOS, Android 16
-Uptime: ............ 24 years, 9 months, 24 days
+Uptime: ............ 25 years, 1 months, 26 days
 Host: ............... WiseBoxs Technologies
 Role: ............... Software Developer
 IDE: ................. VS Code, Antigravity
@@ -14,7 +21,7 @@ Frameworks: .............. Vue.js, AdonisJS, Node.js
 - Contact ---------------------------------
 Email.Personal: ......... somnathkar2023@gmail.com
 Email.Work: .............. somnathkar.dev@gmail.com
-LinkedIn: ................. somnathkar000
+LinkedIn: ................. somnathkar00
 GitHub: ................... SomnathKar000
 
 - GitHub Stats -----------------------------
@@ -24,3 +31,7 @@ Following: ......... 11
 
 Last updated: 2026-07-11
 ```
+
+</td>
+</tr>
+</table>
