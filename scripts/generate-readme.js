@@ -41,7 +41,7 @@ async function getGithubStats(username) {
 // ---- ASCII Art (SVG tspans, not full SVG — gets embedded inline) ----
 async function getAsciiTspans() {
   const { stdout } = await execPromise(
-    `ascii-image-converter ${IMAGE_PATH} --width ${ASCII_WIDTH} -C`,
+    `ascii-image-converter ${IMAGE_PATH} --width ${ASCII_WIDTH}`,
   );
   const lines = stdout.split("\n").filter((l) => l.trim().length > 0);
 
