@@ -17,8 +17,8 @@ jobs:
 
       - name: Install ascii-image-converter
         run: |
-          wget https://github.com/TheZoraiz/ascii-image-converter/releases/latest/download/linux_amd64.tar.gz
-          tar -xzf linux_amd64.tar.gz
+          wget https://github.com/TheZoraiz/ascii-image-converter/releases/download/v1.13.1/ascii-image-converter_Linux_amd64_64bit.tar.gz
+          tar -xzf ascii-image-converter_Linux_amd64_64bit.tar.gz
           sudo mv ascii-image-converter /usr/local/bin/
 
       - uses: actions/setup-node@v4
