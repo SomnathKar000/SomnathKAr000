@@ -6,7 +6,7 @@ on:
       - "assets/profile.jpeg"
       - "README.template.md"
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 0 * * *" # daily, keeps uptime/stats fresh
   workflow_dispatch:
 
 permissions:
@@ -32,6 +32,9 @@ jobs:
           node-version: 20
 
       - name: Generate README + ASCII art
+        env:
+          COLORTERM: truecolor
+          TERM: xterm-256color
         run: node scripts/generate-readme.js
 
       - name: Commit changes
